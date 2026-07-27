@@ -90,12 +90,14 @@ export default function EscrowDeepDive() {
               {/* Slider Input */}
               <div className="space-y-2 pt-2">
                 <div className="flex items-center justify-between text-xs font-semibold text-[#0A318B]">
-                  <span>Custom Contract Amount</span>
+                  <label htmlFor="deepdive-contract-amount">Custom Contract Amount</label>
                   <span className="text-sm font-bold text-[#0A318B]">
                     {formatNaira(budget)}
                   </span>
                 </div>
                 <input
+                  id="deepdive-contract-amount"
+                  aria-label="Custom Contract Amount Range Slider"
                   type="range"
                   min={200000}
                   max={10000000}

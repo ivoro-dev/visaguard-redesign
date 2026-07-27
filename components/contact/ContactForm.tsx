@@ -89,11 +89,12 @@ export default function ContactForm() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-7">
                 {/* Full Name */}
                 <div className="space-y-2">
-                  <label className="text-xs font-semibold text-[#0A318B] flex items-center gap-1.5">
+                  <label htmlFor="contact-fullname" className="text-xs font-semibold text-[#0A318B] flex items-center gap-1.5">
                     <User className="w-3.5 h-3.5 text-[#0A318B]" />
                     <span>Full Name *</span>
                   </label>
                   <input
+                    id="contact-fullname"
                     type="text"
                     required
                     placeholder="e.g. Chukwudi Eze"
@@ -105,11 +106,12 @@ export default function ContactForm() {
 
                 {/* Company */}
                 <div className="space-y-2">
-                  <label className="text-xs font-semibold text-[#0A318B] flex items-center gap-1.5">
+                  <label htmlFor="contact-company" className="text-xs font-semibold text-[#0A318B] flex items-center gap-1.5">
                     <Building2 className="w-3.5 h-3.5 text-[#0A318B]" />
                     <span>Company / Agency (Optional)</span>
                   </label>
                   <input
+                    id="contact-company"
                     type="text"
                     placeholder="e.g. Eze Travel Solutions LTD"
                     value={formData.company}
@@ -122,11 +124,12 @@ export default function ContactForm() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-7">
                 {/* Email Address */}
                 <div className="space-y-2">
-                  <label className="text-xs font-semibold text-[#0A318B] flex items-center gap-1.5">
+                  <label htmlFor="contact-email" className="text-xs font-semibold text-[#0A318B] flex items-center gap-1.5">
                     <AtSign className="w-3.5 h-3.5 text-[#0A318B]" />
                     <span>Email Address *</span>
                   </label>
                   <input
+                    id="contact-email"
                     type="email"
                     required
                     placeholder="chukwudi@example.com"
@@ -138,11 +141,12 @@ export default function ContactForm() {
 
                 {/* Subject of Inquiry */}
                 <div className="space-y-2">
-                  <label className="text-xs font-semibold text-[#0A318B] flex items-center gap-1.5">
+                  <label htmlFor="contact-subject" className="text-xs font-semibold text-[#0A318B] flex items-center gap-1.5">
                     <HelpCircle className="w-3.5 h-3.5 text-[#0A318B]" />
                     <span>Subject of Inquiry *</span>
                   </label>
                   <select
+                    id="contact-subject"
                     value={formData.subject}
                     onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                     className="w-full px-4 py-3 rounded-xl bg-[#F5F9FE] border border-[#E2ECF9] text-xs font-semibold text-[#072366] focus:outline-none focus:bg-white focus:ring-2 focus:ring-[#0A318B]/30 focus:border-[#0A318B]/40 transition-all cursor-pointer shadow-2xs"
@@ -158,11 +162,12 @@ export default function ContactForm() {
 
               {/* Message */}
               <div className="space-y-2">
-                <label className="text-xs font-semibold text-[#0A318B] flex items-center gap-1.5">
+                <label htmlFor="contact-message" className="text-xs font-semibold text-[#0A318B] flex items-center gap-1.5">
                   <MessageSquare className="w-3.5 h-3.5 text-[#0A318B]" />
                   <span>Message *</span>
                 </label>
                 <textarea
+                  id="contact-message"
                   required
                   rows={5}
                   placeholder="Write your detailed inquiry here..."

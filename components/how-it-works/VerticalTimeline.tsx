@@ -121,21 +121,28 @@ export default function VerticalTimeline() {
   const [activeStep, setActiveStep] = useState(0);
   const stepRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-  // Scroll observer to link viewport scrolling to active step
+  // IntersectionObserver to link viewport scrolling to active step without forced reflows
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY + window.innerHeight * 0.4;
-      for (let i = stepRefs.current.length - 1; i >= 0; i--) {
-        const ref = stepRefs.current[i];
-        if (ref && ref.offsetTop <= scrollPosition) {
-          setActiveStep(i);
-          break;
-        }
-      }
-    };
+    const observers: IntersectionObserver[] = [];
+    stepRefs.current.forEach((el, index) => {
+      if (!el) return;
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setActiveStep(index);
+            }
+          });
+        },
+        { rootMargin: "-30% 0px -40% 0px", threshold: 0.2 }
+      );
+      observer.observe(el);
+      observers.push(observer);
+    });
 
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      observers.forEach((obs) => obs.disconnect());
+    };
   }, []);
 
   const jumpToStep = (index: number) => {

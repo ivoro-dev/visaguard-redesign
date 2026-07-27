@@ -57,7 +57,7 @@ export default function SimulatorControls({
       {/* Interactive Amount Slider */}
       <div className="space-y-3">
         <div className="flex items-center justify-between">
-          <label className="text-xs font-bold text-[#566C9A] uppercase tracking-wider">
+          <label htmlFor="simulator-deposit-amount" className="text-xs font-bold text-[#566C9A] uppercase tracking-wider">
             Total Application Deposit
           </label>
           <span className="text-lg font-bold text-[#0A318B]">
@@ -66,6 +66,8 @@ export default function SimulatorControls({
         </div>
 
         <input
+          id="simulator-deposit-amount"
+          aria-label="Total Application Deposit Amount"
           type="range"
           min={200000}
           max={5000000}

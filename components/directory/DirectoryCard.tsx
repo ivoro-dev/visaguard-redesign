@@ -53,7 +53,7 @@ export default function DirectoryCard(props: DirectoryCardProps) {
               />
             </div>
             <div>
-              <h4 className="text-base font-bold text-[#0A318B]">{item.country}</h4>
+              <h3 className="text-base font-bold text-[#0A318B]">{item.country}</h3>
               <span className="text-[10px] text-[#566C9A] font-semibold">Official Embassy Info</span>
             </div>
           </div>
@@ -63,7 +63,7 @@ export default function DirectoryCard(props: DirectoryCardProps) {
         </div>
 
         <div>
-          <h5 className="text-sm font-bold text-[#072366]">{item.title}</h5>
+          <h4 className="text-sm font-bold text-[#072366]">{item.title}</h4>
           <p className="text-xs text-[#566C9A] mt-1 leading-relaxed">{item.note}</p>
         </div>
 
@@ -103,7 +103,7 @@ export default function DirectoryCard(props: DirectoryCardProps) {
               />
             </div>
             <div>
-              <h4 className="text-base font-bold text-[#0A318B]">{item.name}</h4>
+              <h3 className="text-base font-bold text-[#0A318B]">{item.name}</h3>
               <span className="text-[10px] text-[#566C9A] font-semibold">{item.code} Official Carrier</span>
             </div>
           </div>
@@ -145,7 +145,7 @@ export default function DirectoryCard(props: DirectoryCardProps) {
       </div>
 
       <div className="space-y-2">
-        <h4 className="text-base font-bold text-[#0A318B] leading-snug">{item.title}</h4>
+        <h3 className="text-base font-bold text-[#0A318B] leading-snug">{item.title}</h3>
         <p className="text-xs text-[#566C9A] leading-relaxed">
           Learn how Visa Guard Africa&apos;s milestone escrow prevents advance fee fraud and protects your travel funds.
         </p>

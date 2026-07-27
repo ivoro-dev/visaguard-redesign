@@ -18,24 +18,27 @@ export default function HeroSocialProof() {
         <div className="w-10 h-10 rounded-full border-2 border-white overflow-hidden relative shadow-md">
           <Image
             src="/assets/agent1.jpg"
-            alt="Agent 1"
+            alt="Verified Visa Guard Agent 1 profile"
             fill
+            sizes="40px"
             className="object-cover"
           />
         </div>
         <div className="w-10 h-10 rounded-full border-2 border-white overflow-hidden relative shadow-md">
           <Image
             src="/assets/agent2.jpg"
-            alt="Agent 2"
+            alt="Verified Visa Guard Agent 2 profile"
             fill
+            sizes="40px"
             className="object-cover"
           />
         </div>
         <div className="w-10 h-10 rounded-full border-2 border-white overflow-hidden relative shadow-md">
           <Image
             src="/assets/agent3.jpg"
-            alt="Agent 3"
+            alt="Verified Visa Guard Agent 3 profile"
             fill
+            sizes="40px"
             className="object-cover"
           />
         </div>

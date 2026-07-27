@@ -76,6 +76,7 @@ export default function SecuredProtectedSection() {
                 src="/assets/mockup.png"
                 alt="Visa Guard Africa Mobile App - Secured & Protected Escrow"
                 fill
+                sizes="(max-width: 768px) 100vw, 420px"
                 className="object-contain object-bottom drop-shadow-2xl"
                 priority
               />

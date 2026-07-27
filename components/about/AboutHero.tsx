@@ -32,8 +32,9 @@ export default function AboutHero() {
       <div className="absolute inset-0 z-0 pointer-events-none">
         <Image
           src="/assets/bg-about.png"
-          alt="About background"
+          alt="Visa Guard Africa About Us background infrastructure"
           fill
+          sizes="100vw"
           className="object-cover object-center opacity-60"
           priority
         />

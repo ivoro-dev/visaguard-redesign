@@ -20,8 +20,9 @@ export default function FounderStory() {
               <div className="relative w-full max-w-[420px] aspect-[4/4.8] sm:aspect-[4/5] rounded-[24px] overflow-hidden border-[3px] border-white shadow-2xl">
                 <Image
                   src="/assets/about-founder.png"
-                  alt="Mr. Chukwudi Eze · (Founder)"
+                  alt="Mr. Chukwudi Eze · Founder & CEO of Visa Guard Africa"
                   fill
+                  sizes="(max-width: 1024px) 100vw, 420px"
                   className="object-cover object-top"
                   priority
                 />

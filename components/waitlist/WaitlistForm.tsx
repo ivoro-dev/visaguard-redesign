@@ -58,8 +58,11 @@ export default function WaitlistForm() {
         {/* Input Fields */}
         <div className="space-y-3">
           <div>
-            <label className="block text-xs font-bold text-[#072366] mb-1">Full Name</label>
+            <label htmlFor="waitlist-fullname" className="block text-xs font-bold text-[#072366] mb-1">
+              Full Name
+            </label>
             <input
+              id="waitlist-fullname"
               type="text"
               required
               value={fullName}
@@ -70,8 +73,11 @@ export default function WaitlistForm() {
           </div>
 
           <div>
-            <label className="block text-xs font-bold text-[#072366] mb-1">Email Address</label>
+            <label htmlFor="waitlist-email" className="block text-xs font-bold text-[#072366] mb-1">
+              Email Address
+            </label>
             <input
+              id="waitlist-email"
               type="email"
               required
               value={email}
@@ -83,8 +89,11 @@ export default function WaitlistForm() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div>
-              <label className="block text-xs font-bold text-[#072366] mb-1">WhatsApp / Phone</label>
+              <label htmlFor="waitlist-phone" className="block text-xs font-bold text-[#072366] mb-1">
+                WhatsApp / Phone
+              </label>
               <input
+                id="waitlist-phone"
                 type="tel"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
@@ -94,8 +103,11 @@ export default function WaitlistForm() {
             </div>
 
             <div>
-              <label className="block text-xs font-bold text-[#072366] mb-1">Primary Destination</label>
+              <label htmlFor="waitlist-destination" className="block text-xs font-bold text-[#072366] mb-1">
+                Primary Destination
+              </label>
               <select
+                id="waitlist-destination"
                 value={destination}
                 onChange={(e) => setDestination(e.target.value)}
                 className="w-full px-4 py-3 rounded-xl bg-white border border-[#E2ECF9] text-sm text-[#072366] focus:outline-none focus:border-[#0A318B] focus:ring-1 focus:ring-[#0A318B] transition-all cursor-pointer"
