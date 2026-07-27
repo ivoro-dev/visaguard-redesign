@@ -34,10 +34,11 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Visa Guard Africa | Verified Agents & Escrow-Protected Travel Infrastructure",
+  title: "Visa Guard | More than an App it's a shield",
   description:
     "Protecting African travelers from visa scams through verified agent badging, milestone-based escrow payments, AI document verification, and NDPR-compliant security.",
   keywords: [
+    "Visa Guard",
     "Visa Guard Africa",
     "Visa scam Nigeria",
     "Fake visa agents",
@@ -50,7 +51,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Visa Guard Africa Technologies LTD" }],
   openGraph: {
-    title: "Visa Guard Africa — Verify Before You Pay",
+    title: "Visa Guard | More than an App it's a shield",
     description:
       "Africa's first travel trust infrastructure holding agent payments in escrow until verified milestones are completed.",
     url: "https://www.visaguardafrica.com",
@@ -59,7 +60,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Visa Guard Africa — Escrow-Protected Travel Infrastructure",
+    title: "Visa Guard | More than an App it's a shield",
     description:
       "Eliminating visa agent scams across Africa through verified badges and secure escrow milestones.",
   },
