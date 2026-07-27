@@ -35,9 +35,9 @@ export default function WaitlistSuccessModal({ isOpen, onClose, email }: Waitlis
               </div>
 
               <div className="space-y-2">
-                <h3 className="text-2xl font-bold text-[#0A318B]">You&apos;re On the VIP Escrow List!</h3>
+                <h3 className="text-2xl font-bold text-[#0A318B]">You&apos;re On the Visa Guard Waitlist!</h3>
                 <p className="text-xs sm:text-sm text-[#566C9A]">
-                  We sent a confirmation link to <span className="font-bold text-[#0A318B]">{email}</span>. You will receive priority access when our milestone escrow vault goes live.
+                  We sent a confirmation link to <span className="font-bold text-[#0A318B]">{email}</span>. Your money will stay protected until verified milestones are completed.
                 </p>
               </div>
 

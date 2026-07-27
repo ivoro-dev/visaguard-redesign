@@ -29,27 +29,32 @@ export default function WaitlistSection() {
             </div>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0A318B] tracking-tight leading-tight">
-              Be First to Secure Your Visa Funds in <br className="hidden sm:inline" />
-              <span className="gradient-text-blue font-serif-heading italic font-normal">Bank Escrow Protection</span>
+              Protect Your Journey <br className="hidden sm:inline" />
+              <span className="gradient-text-blue font-serif-heading italic font-normal">Before You Pay.</span>
             </h2>
 
-            <p className="text-[#3B5284] text-base sm:text-lg leading-relaxed">
-              Join over 1,000+ Nigerian and African travelers gaining early access to verified agent badging, zero upfront scam risk, and milestone payment releases.
-            </p>
+            <div className="space-y-2">
+              <p className="text-[#072366] text-base sm:text-lg font-bold leading-snug">
+                Your money stays protected until verified milestones are completed.
+              </p>
+              <p className="text-[#3B5284] text-xs sm:text-sm sm:text-base leading-relaxed">
+                Join over 1,000+ Nigerian and African travelers gaining early access to verified agent badging, zero upfront scam risk, and bank escrow payment releases.
+              </p>
+            </div>
 
-            {/* Benefit Checkmarks */}
-            <div className="space-y-3 pt-2 text-xs sm:text-sm font-semibold text-[#072366] max-w-lg mx-auto sm:mx-0">
-              <div className="flex items-center gap-3">
+            {/* Benefit Checkmarks - Scannable */}
+            <div className="space-y-2.5 pt-1 text-xs sm:text-sm font-semibold text-[#072366] max-w-lg mx-auto sm:mx-0">
+              <div className="flex items-center gap-3 p-3 rounded-xl bg-white border border-[#E2ECF9] shadow-2xs">
                 <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
-                <span>Zero Escrow Transaction Fees on First Application</span>
+                <span><strong className="text-[#0A318B]">Zero Escrow Fees</strong> on your first travel application</span>
               </div>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 p-3 rounded-xl bg-white border border-[#E2ECF9] shadow-2xs">
                 <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
-                <span>Free AI Verification Audit for Embassy Appointment Slips</span>
+                <span><strong className="text-[#0A318B]">Free AI Audit</strong> for embassy appointment slips & docs</span>
               </div>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 p-3 rounded-xl bg-white border border-[#E2ECF9] shadow-2xs">
                 <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
-                <span>Direct Access to Top 9-Step Vetted Travel Agencies</span>
+                <span><strong className="text-[#0A318B]">Direct Access</strong> to top 9-step CAC-vetted travel agencies</span>
               </div>
             </div>
 
@@ -67,7 +72,7 @@ export default function WaitlistSection() {
           >
             <div className="p-6 sm:p-8 rounded-3xl bg-white border border-[#E2ECF9] shadow-2xl space-y-6 relative overflow-hidden">
               <div className="text-center space-y-1">
-                <h3 className="text-2xl font-bold text-[#0A318B]">Join the Milestone Escrow Waitlist</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-[#0A318B]">Join Thousands of Africans Choosing Safer Travel</h3>
                 <p className="text-xs text-[#566C9A]">Get instant SMS/email notification when public access opens.</p>
               </div>
 

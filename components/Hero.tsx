@@ -21,7 +21,7 @@ export default function Hero() {
         >
           <span className="w-2 h-2 rounded-full bg-white animate-ping shrink-0" />
           <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-blue-200 shrink-0" />
-          <span>Milestone Escrow Safeguard Against Visa Scams</span>
+          <span>Africa&apos;s Travel Trust Infrastructure</span>
         </motion.div>
 
         {/* CENTERED HEADING */}
@@ -33,22 +33,45 @@ export default function Hero() {
         >
           Stop Fake Visa Agents From Stealing Your Money. <br className="" />
           <span className="gradient-text-blue text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif-heading italic font-normal">
-            Join the Waitlist for Milestone Escrow.
+            Join the Movement to Build a Visa Scam-Free Africa.
           </span>
         </motion.h1>
 
-        {/* CENTERED SUPPORTING TEXT */}
-        <motion.p
+        {/* CENTERED SUPPORTING TEXT - STRONG BENEFIT FIRST & SCANNABLE */}
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-black text-sm sm:text-base md:text-lg max-w-2xl mx-auto font-normal leading-relaxed px-2 sm:px-0"
+          className="max-w-2xl mx-auto space-y-2 px-2 sm:px-0 text-center"
         >
-          Visa Guard holds your application fees in bank-grade escrow vaults,
-          releasing payments to 9-step vetted travel agents ONLY when verified
-          milestones (appointment booking, document submission, visa outcome)
-          are achieved.
-        </motion.p>
+          <p className="text-black text-base sm:text-lg md:text-xl font-bold leading-snug">
+            Your money stays protected until verified milestones are completed.
+          </p>
+          <p className="text-[#3B5284] text-xs sm:text-sm md:text-base font-normal leading-relaxed">
+            Visa Guard holds application fees safely in bank escrow, releasing payments to 9-step vetted travel agents only when real proof—like embassy appointments and visa outcomes—is verified.
+          </p>
+        </motion.div>
+
+        {/* SCANNABLE BENEFIT PILLS */}
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.25 }}
+          className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs sm:text-sm font-medium text-[#072366] pt-1"
+        >
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-[#E2ECF9] shadow-2xs">
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+            9-Step Vetted Agents
+          </span>
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-[#E2ECF9] shadow-2xs">
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+            Milestone Escrow Protection
+          </span>
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-[#E2ECF9] shadow-2xs">
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+            Scam-Free Guarantee
+          </span>
+        </motion.div>
 
         {/* CENTERED CTA BUTTONS */}
         <motion.div
@@ -61,7 +84,7 @@ export default function Hero() {
             href="#waitlist"
             className="w-full sm:w-auto px-5 sm:px-8 py-3.5 sm:py-4 rounded-xl bg-[#0A318B] hover:bg-[#072366] text-white font-bold text-sm sm:text-base shadow-xl shadow-blue-900/20 hover:scale-[1.02] transition-all flex items-center justify-center gap-2 group"
           >
-            <span>Lock Your Escrow Protection</span>
+            <span>Protect Your Journey Today</span>
             <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
           </a>
 
@@ -70,7 +93,7 @@ export default function Hero() {
             className="w-full sm:w-auto px-4 sm:px-7 py-3.5 sm:py-4 rounded-xl bg-white hover:bg-[#F5F9FE] text-[#0A318B] font-semibold text-sm sm:text-base border border-[#E2ECF9] shadow-sm flex items-center justify-center gap-2 transition-all"
           >
             <Lock className="w-4 h-4 text-[#0A318B]" />
-            <span>Try Milestone Escrow Simulator</span>
+            <span>Try Escrow Simulator</span>
           </a>
         </motion.div>
 
