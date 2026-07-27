@@ -158,27 +158,7 @@ export default function ContactCards() {
 
           <div className="grid grid-cols-2 gap-2 pt-1">
             <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noreferrer"
-              className="p-2.5 rounded-xl bg-[#F5F9FE] border border-[#E2ECF9] hover:bg-slate-100 hover:border-[#0A318B]/20 text-xs font-semibold text-[#0A318B] flex items-center justify-between transition-all cursor-pointer group/link"
-            >
-              <span>LinkedIn</span>
-              <ExternalLink className="w-3.5 h-3.5 text-[#566C9A] group-hover/link:text-[#0A318B] transition-colors" />
-            </a>
-
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noreferrer"
-              className="p-2.5 rounded-xl bg-[#F5F9FE] border border-[#E2ECF9] hover:bg-slate-100 hover:border-[#0A318B]/20 text-xs font-semibold text-[#0A318B] flex items-center justify-between transition-all cursor-pointer group/link"
-            >
-              <span>X (Twitter)</span>
-              <ExternalLink className="w-3.5 h-3.5 text-[#566C9A] group-hover/link:text-[#0A318B] transition-colors" />
-            </a>
-
-            <a
-              href="https://whatsapp.com"
+              href="https://wa.me/2349015663101"
               target="_blank"
               rel="noreferrer"
               className="p-2.5 rounded-xl bg-[#F5F9FE] border border-[#E2ECF9] hover:bg-slate-100 hover:border-[#0A318B]/20 text-xs font-semibold text-[#0A318B] flex items-center justify-between transition-all cursor-pointer group/link"
@@ -188,12 +168,32 @@ export default function ContactCards() {
             </a>
 
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/visaguardafrica?igsh=cGFhMXhla28wcDc="
               target="_blank"
               rel="noreferrer"
               className="p-2.5 rounded-xl bg-[#F5F9FE] border border-[#E2ECF9] hover:bg-slate-100 hover:border-[#0A318B]/20 text-xs font-semibold text-[#0A318B] flex items-center justify-between transition-all cursor-pointer group/link"
             >
               <span>Instagram</span>
+              <ExternalLink className="w-3.5 h-3.5 text-[#566C9A] group-hover/link:text-[#0A318B] transition-colors" />
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@visaguardafrica?_r=1&_t=ZN-98NyItzHZuI"
+              target="_blank"
+              rel="noreferrer"
+              className="p-2.5 rounded-xl bg-[#F5F9FE] border border-[#E2ECF9] hover:bg-slate-100 hover:border-[#0A318B]/20 text-xs font-semibold text-[#0A318B] flex items-center justify-between transition-all cursor-pointer group/link"
+            >
+              <span>TikTok</span>
+              <ExternalLink className="w-3.5 h-3.5 text-[#566C9A] group-hover/link:text-[#0A318B] transition-colors" />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/chukwudi-eze-5580723b0/"
+              target="_blank"
+              rel="noreferrer"
+              className="p-2.5 rounded-xl bg-[#F5F9FE] border border-[#E2ECF9] hover:bg-slate-100 hover:border-[#0A318B]/20 text-xs font-semibold text-[#0A318B] flex items-center justify-between transition-all cursor-pointer group/link"
+            >
+              <span>LinkedIn</span>
               <ExternalLink className="w-3.5 h-3.5 text-[#566C9A] group-hover/link:text-[#0A318B] transition-colors" />
             </a>
           </div>
