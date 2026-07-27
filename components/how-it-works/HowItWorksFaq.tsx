@@ -23,7 +23,7 @@ const FAQS: FaqItem[] = [
   {
     question: "How does Visa Guard protect against visa agent scams in Nigeria and Africa?",
     answer:
-      "We eliminate lump-sum upfront cash payments. Application fees stay locked in bank-grade escrow vaults and release step-by-step only after verified document and appointment proof, eliminating agent ghosting and fake document fraud.",
+      "We eliminate lump-sum upfront cash payments. All application funds stay securely locked in bank-grade escrow vaults handled entirely by our payment infrastructure provider, Paystack. Visa Guard provides the trust orchestration layer and does not have direct access to transaction funds—except for standard subscription plans and platform maintenance commissions. Funds are released step-by-step only after verified document and appointment proof, eliminating agent ghosting and fake document fraud.",
   },
   {
     question: "How long does a dispute refund take if an agent breaches milestone terms?",
@@ -33,7 +33,7 @@ const FAQS: FaqItem[] = [
   {
     question: "How are travel agents verified on Visa Guard before taking clients?",
     answer:
-      "Every listed travel agent undergoes a rigorous 9-step vetting process including CAC corporate registry check, physical office address inspection, director NIN/BVN biometric matching, and active travel license confirmation.",
+      "Every listed travel agent undergoes a rigorous 9-step vetting process including CAC corporate registry check, mandatory live face liveness verification, physical office address inspection, director NIN/BVN biometric matching, and active travel license confirmation.",
   },
 ];
 

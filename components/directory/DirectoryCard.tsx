@@ -116,13 +116,15 @@ export default function DirectoryCard(props: DirectoryCardProps) {
           <p className="text-xs text-[#566C9A] mt-1 leading-relaxed">{item.note}</p>
         </div>
 
-        <Link
-          href="/how-it-works"
+        <a
+          href={item.url}
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0A318B] hover:text-[#072366] transition-colors pt-2 cursor-pointer group"
         >
-          <span>Verify Booking Rules</span>
-          <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-        </Link>
+          <span>Visit Official Portal</span>
+          <ExternalLink className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+        </a>
       </motion.div>
     );
   }

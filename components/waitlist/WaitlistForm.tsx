@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { ArrowRight, UserCheck, ShieldCheck } from "lucide-react";
+import { ArrowRight, UserCheck, ShieldCheck, AlertCircle } from "lucide-react";
 import WaitlistSuccessModal from "./WaitlistSuccessModal";
 
 export default function WaitlistForm() {
@@ -11,22 +11,61 @@ export default function WaitlistForm() {
   const [phone, setPhone] = useState("");
   const [destination, setDestination] = useState("Canada");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
   const [showModal, setShowModal] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email || !fullName) return;
 
     setIsSubmitting(true);
-    setTimeout(() => {
+    setErrorMessage("");
+
+    try {
+      const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || "b7c7cde3-519f-43c5-b11d-d9c31cad590e";
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: accessKey,
+          subject: `VisGuard Early Access Waitlist - ${role === "traveler" ? "Traveler" : "Travel Agent"}`,
+          from_name: fullName,
+          name: fullName,
+          email: email,
+          phone: phone || "Not specified",
+          role: role === "traveler" ? "Traveler" : "Travel Agent",
+          destination: destination,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setShowModal(true);
+      } else {
+        setErrorMessage(data.message || "Failed to submit form. Please try again.");
+      }
+    } catch (err) {
+      console.error("Web3Forms submit error:", err);
+      setErrorMessage("Connection error. Please try again.");
+    } finally {
       setIsSubmitting(false);
-      setShowModal(true);
-    }, 800);
+    }
   };
 
   return (
     <>
       <form onSubmit={handleSubmit} className="space-y-4">
+        {errorMessage && (
+          <div className="p-3 rounded-xl bg-red-50 border border-red-200 text-red-700 text-xs font-semibold flex items-center gap-2">
+            <AlertCircle className="w-4 h-4 shrink-0 text-red-500" />
+            <span>{errorMessage}</span>
+          </div>
+        )}
+
         {/* Role Toggle Selector */}
         <div className="grid grid-cols-2 gap-2 p-1.5 rounded-2xl bg-[#F5F9FE] border border-[#E2ECF9]">
           <button
@@ -97,7 +136,7 @@ export default function WaitlistForm() {
                 type="tel"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
-                placeholder="+234 801 234 5678"
+                placeholder="09915663101"
                 className="w-full px-4 py-3 rounded-xl bg-white border border-[#E2ECF9] text-sm text-[#072366] placeholder:text-slate-400 focus:outline-none focus:border-[#0A318B] focus:ring-1 focus:ring-[#0A318B] transition-all"
               />
             </div>

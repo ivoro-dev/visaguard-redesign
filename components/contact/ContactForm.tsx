@@ -10,11 +10,13 @@ import {
   AtSign,
   HelpCircle,
   MessageSquare,
+  AlertCircle,
 } from "lucide-react";
 
 export default function ContactForm() {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const [formData, setFormData] = useState({
     fullName: "",
@@ -24,13 +26,44 @@ export default function ContactForm() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setTimeout(() => {
+    setErrorMessage("");
+
+    try {
+      const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || "b7c7cde3-519f-43c5-b11d-d9c31cad590e";
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: accessKey,
+          subject: `VisGuard Contact Inquiry: ${formData.subject}`,
+          from_name: formData.fullName,
+          name: formData.fullName,
+          email: formData.email,
+          company: formData.company || "Not specified",
+          inquiry_subject: formData.subject,
+          message: formData.message,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setFormSubmitted(true);
+      } else {
+        setErrorMessage(data.message || "Failed to submit inquiry. Please try again.");
+      }
+    } catch (err) {
+      console.error("Web3Forms submit error:", err);
+      setErrorMessage("Connection error. Please check your network and try again.");
+    } finally {
       setIsSubmitting(false);
-      setFormSubmitted(true);
-    }, 1000);
+    }
   };
 
   return (
@@ -50,6 +83,13 @@ export default function ContactForm() {
             Fill out the details below and we will respond to your inquiry promptly.
           </p>
         </div>
+
+        {errorMessage && (
+          <div className="p-4 rounded-2xl bg-red-50 border border-red-200 text-red-700 text-xs font-semibold flex items-center gap-2.5">
+            <AlertCircle className="w-5 h-5 shrink-0 text-red-500" />
+            <span>{errorMessage}</span>
+          </div>
+        )}
 
         <AnimatePresence mode="wait">
           {formSubmitted ? (

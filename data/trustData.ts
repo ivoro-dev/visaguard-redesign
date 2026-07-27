@@ -21,11 +21,11 @@ export const TRUST_PILLARS_DATA: TrustPillarItem[] = [
     tagText: "text-white",
     highlight: "Only 1 in 12 applicant agents qualify for verified status.",
     description:
-      "We physically and digitally verify CAC corporate registration, physical office locations across Lagos/Abuja, director NIN/BVN identities, and past client visa outcomes before any agent is listed.",
+      "We physically and digitally verify CAC corporate registration, conduct mandatory live 3D face verification for agency directors, audit physical office locations across Lagos/Abuja, and check past client visa outcomes before any agent is listed.",
     features: [
-      "Physical office walk-through verification",
+      "Mandatory live 3D face verification process",
+      "Physical office walk-through inspection",
       "Director NIN/BVN identity cross-check",
-      "Historical visa outcome audit ratio",
       "Live scam complaint database matching",
     ],
     ctaText: "Explore Agent Vetting Standards",

@@ -25,7 +25,7 @@ export default function AgentVerificationShowcase() {
       badge: "Identity Vetted",
       steps: [
         { icon: FileBadge, title: "Government ID Verification", desc: "NIN / International Passport biometric check against legal database." },
-        { icon: UserCheck, title: "3D Face Liveness Match", desc: "Real-time 3D facial liveness match to prevent impersonation." },
+        { icon: UserCheck, title: "Live Face Verification Process", desc: "Mandatory live 3D facial liveness scan & biometric match to prevent agent impersonation." },
         { icon: Building, title: "CAC Business Registration", desc: "Corporate Affairs Commission (CAC) status & RC number lookup." },
       ],
     },

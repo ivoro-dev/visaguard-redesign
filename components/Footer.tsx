@@ -78,14 +78,14 @@ export default function Footer() {
             <ul className="space-y-3 text-xs text-blue-100">
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-blue-200 shrink-0" />
-                <a href="mailto:support@visaguard.africa" className="hover:text-white transition-colors">
-                  support@visaguard.africa
+                <a href="mailto:admin@visaguardafrica.com" className="hover:text-white transition-colors">
+                  admin@visaguardafrica.com
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-blue-200 shrink-0" />
-                <a href="tel:+234800847248273" className="hover:text-white transition-colors">
-                  +234 (0) 800 VISAGUARD (+234 800 847 248 273)
+                <a href="tel:09915663101" className="hover:text-white transition-colors">
+                  09915663101
                 </a>
               </li>
               <li className="flex items-start gap-2.5">
