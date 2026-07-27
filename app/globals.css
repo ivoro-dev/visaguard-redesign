@@ -1,26 +1,183 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-sans: var(--font-manrope);
+  --font-[#0]: var(--font-manrope);
+  --font-heading: var(--font-poppins);
+  --font-mono: var(--font-jetbrains);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --brand-blue: #0a318b;
+    --brand-blue-hover: #0d3fa8;
+    --brand-blue-dark: #072366;
+    --brand-blue-accent: #0a2975;
+    
+    --bg-cream: #fbfdf3;
+    --bg-ice: #f5f9fe;
+    --bg-white: #ffffff;
+    
+    --border-ice: #e2ecf9;
+    --border-blue: rgba(10, 49, 139, 0.15);
+    
+    --text-primary: #072366;
+    --text-body: #233b6e;
+    --text-muted: #566c9a;
   }
 }
 
+/* Base Body Typography (Manrope) */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-cream);
+  color: var(--text-primary);
+  font-family: var(--font-manrope), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
 }
+
+/* Headings Typography (Poppins) */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-heading {
+  font-family: var(--font-poppins), system-ui, -apple-system, sans-serif;
+}
+
+/* Italic Words Typography (Instrument Serif) */
+i,
+em,
+.italic,
+.font-serif-heading {
+  font-family: var(--font-instrument), Georgia, serif;
+}
+
+/* Labels and Buttons Typography (JetBrains Mono) */
+button,
+label,
+.font-label,
+.badge,
+input[type="submit"],
+input[type="button"],
+a.button-style {
+  font-family: var(--font-jetbrains), monospace;
+}
+
+/* Custom Body Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f9fe;
+  border-left: 1px solid #e2ecf9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0a318b;
+  border-radius: 9999px;
+  border: 2px solid #f5f9fe;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #072366;
+}
+
+/* Hide Scrollbar Utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+/* Interactive Cursor Pointer Enforcement */
+button,
+a,
+select,
+input[type="submit"],
+input[type="button"],
+[role="button"],
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+/* Custom Palette Utility Classes */
+.bg-brand-cream {
+  background-color: #fbfdf3;
+}
+
+.bg-brand-ice {
+  background-color: #f5f9fe;
+}
+
+.bg-brand-blue {
+  background-color: #0a318b;
+}
+
+.text-brand-blue {
+  color: #0a318b;
+}
+
+.border-brand-ice {
+  border-color: #e2ecf9;
+}
+
+.border-brand-blue {
+  border-color: rgba(10, 49, 139, 0.2);
+}
+
+/* Premium Card Utilities */
+.vga-card {
+  background: #ffffff;
+  border: 1px solid #e2ecf9;
+  box-shadow: 0 4px 20px -2px rgba(10, 49, 139, 0.04);
+}
+
+.vga-card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.vga-card-hover:hover {
+  transform: translateY(-4px);
+  border-color: rgba(10, 49, 139, 0.3);
+  box-shadow: 0 12px 30px -8px rgba(10, 49, 139, 0.1);
+}
+
+.vga-blue-card {
+  background: #0a318b;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Text Gradients */
+.gradient-text-blue {
+  background: linear-gradient(135deg, #0a318b 0%, #1a4ab9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-dark {
+  background: linear-gradient(180deg, #072366 0%, #0a318b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Background Grid Utilities */
+.vga-bg-grid {
+  background-image: radial-gradient(rgba(10, 49, 139, 0.18) 1.5px, transparent 1.5px);
+  background-size: 28px 28px;
+}
+
+.vga-bg-grid-dark {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.12) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
+

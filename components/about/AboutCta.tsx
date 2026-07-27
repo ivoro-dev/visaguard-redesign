@@ -1,0 +1,41 @@
+"use client";
+
+import Link from "next/link";
+import { Zap, ArrowRight } from "lucide-react";
+
+export default function AboutCta() {
+  return (
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#0A318B] text-white relative overflow-hidden">
+      <div className="max-w-4xl mx-auto text-center space-y-6 relative z-10">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-blue-100 text-xs font-semibold">
+          <Zap className="w-4 h-4 text-emerald-300" />
+          <span>Join Africa&apos;s Travel Revolution</span>
+        </div>
+
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
+          Ready To Travel Without Financial Risk?
+        </h2>
+
+        <p className="text-blue-100 text-sm sm:text-base max-w-2xl mx-auto font-medium leading-relaxed">
+          Reserve your early access spot today and gain first access to our verified agent directory and escrow vault protection.
+        </p>
+
+        <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <Link
+            href="/#waitlist"
+            className="w-full sm:w-auto px-8 py-4 rounded-xl bg-white text-[#0A318B] hover:bg-blue-50 font-bold text-sm shadow-xl flex items-center justify-center gap-2 transition-all cursor-pointer hover:scale-[1.02] active:scale-[0.98]"
+          >
+            <span>Join Waitlist Now</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+          <Link
+            href="/how-it-works"
+            className="w-full sm:w-auto px-8 py-4 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-sm border border-white/20 transition-all cursor-pointer hover:scale-[1.02] active:scale-[0.98]"
+          >
+            See How It Works
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
