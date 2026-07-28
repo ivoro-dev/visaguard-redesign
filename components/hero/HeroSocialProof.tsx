@@ -54,7 +54,7 @@ export default function HeroSocialProof() {
           </span>
         </div>
         <p className="text-xs text-[#566C9A] font-medium">
-          1,000+ Nigerian & African travelers on the waitlist
+          Now Live on Google Play Store • 10,000+ Protected Travelers
         </p>
       </div>
     </motion.div>

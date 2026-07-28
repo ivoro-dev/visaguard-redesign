@@ -168,10 +168,10 @@ export default function WaitlistForm() {
           className="w-full py-4 rounded-xl bg-[#0A318B] hover:bg-[#072366] text-white font-bold text-sm sm:text-base shadow-lg shadow-blue-900/20 hover:scale-[1.01] transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-70"
         >
           {isSubmitting ? (
-            <span>Securing Your Spot...</span>
+            <span>Sending Link...</span>
           ) : (
             <>
-              <span>Lock Early Access & Free Protection</span>
+              <span>Send Google Play Download Link</span>
               <ArrowRight className="w-5 h-5" />
             </>
           )}

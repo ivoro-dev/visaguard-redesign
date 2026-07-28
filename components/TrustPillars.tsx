@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ShieldCheck } from "lucide-react";
 import TrustCard from "./trust/TrustCard";
+import SecurityMeasuresGrid from "./trust/SecurityMeasuresGrid";
 import { TRUST_PILLARS_DATA } from "@/data/trustData";
 
 export default function TrustPillars() {
@@ -19,18 +20,18 @@ export default function TrustPillars() {
         >
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#F5F9FE] border border-[#E2ECF9] text-[#0A318B] text-xs font-bold shadow-xs">
             <ShieldCheck className="w-4 h-4 text-[#0A318B]" />
-            <span>3 Pillars of Visa Guard Security</span>
+            <span>Trust & Security Safeguards</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0A318B] tracking-tight">
-            How We Eliminate <br />
+            Security Is At The Core Of <br />
             <span className="gradient-text-blue font-serif-heading italic font-normal">
-              Visa Scams & Advance Fee Fraud
+              Everything We Build
             </span>
           </h2>
 
           <p className="text-[#3B5284] text-base sm:text-lg">
-            Our multi-layered trust infrastructure combines physical agent verification, milestone bank escrow vaults, and AI appointment slip inspection.
+            Our multi-layered trust infrastructure combines physical agent verification, bank escrow vaults, AI document forensic inspection, and strict data privacy protocols.
           </p>
         </motion.div>
 
@@ -40,6 +41,9 @@ export default function TrustPillars() {
             <TrustCard key={pillar.number} pillar={pillar} idx={idx} />
           ))}
         </div>
+
+        {/* Comprehensive 9-Point Security Architecture Grid */}
+        <SecurityMeasuresGrid />
       </div>
     </section>
   );

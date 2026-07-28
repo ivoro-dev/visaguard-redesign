@@ -48,11 +48,14 @@ export default function FounderStory() {
               </h2>
 
               <div className="text-[#E2ECF9] text-sm sm:text-base font-normal leading-relaxed space-y-4">
+                <blockquote className="p-4 rounded-xl bg-white/10 border-l-4 border-amber-400 text-white font-serif-heading italic text-lg sm:text-xl">
+                  &ldquo;Visa Guard was built by someone who personally lost money to visa fraud and decided to build a platform that protects others from the same experience.&rdquo;
+                </blockquote>
                 <p>
-                  <strong className="font-bold text-white">Visa Guard Africa Technologies</strong> was founded by <strong className="font-bold text-white">Chukwudi Eze</strong> after personally experiencing the devastating impact of visa and relocation scams. Like many Africans pursuing opportunities abroad, he trusted the wrong people, lost money, faced betrayal, and endured moments of uncertainty that could have derailed his dreams.
+                  <strong className="font-bold text-white">Visa Guard Africa Technologies LTD</strong> was founded by <strong className="font-bold text-white">Chukwudi Eze</strong> after personally experiencing the devastating financial impact of fake visa agents. Like millions of Africans pursuing opportunities abroad, he trusted unregulated agents, lost significant savings, faced betrayal, and endured heartbreak.
                 </p>
                 <p>
-                  Instead of allowing those experiences to define him, he chose to build a solution to protect others from the same pain. Through embassies, immigration authorities and law enforcement organizations, he discovered a major gap in the African travel industry - the absence of a trusted, technology-driven system focused on transparency, accountability, and traveler protection. That realization became the foundation of Visa Guard Africa Technologies LTD.
+                  Instead of allowing those experiences to define him, he chose to build a platform that ensures no African family has to endure the same ordeal. Today, Visa Guard bridges the trust gap in African travel through 9-step agent verification, AI fraud detection, and milestone-based bank escrow payments.
                 </p>
               </div>
             </div>

@@ -1,6 +1,8 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import MarqueeTicker from "@/components/MarqueeTicker";
+import QuickHowItWorks from "@/components/QuickHowItWorks";
+import SocialProofStats from "@/components/SocialProofStats";
 import EscrowSimulator from "@/components/EscrowSimulator";
 import TrustPillars from "@/components/TrustPillars";
 import SecuredProtectedSection from "@/components/SecuredProtectedSection";
@@ -23,10 +25,16 @@ export default function Home() {
       {/* Moving Marquee Banner (Trust • Protect • Safety) */}
       <MarqueeTicker />
 
+      {/* 3-Step Quick How It Works Section */}
+      <QuickHowItWorks />
+
+      {/* Dynamic Social Proof & Impact Statistics */}
+      <SocialProofStats />
+
       {/* Interactive Escrow Simulator (Framer Motion Step-by-Step) */}
       <EscrowSimulator />
 
-      {/* 8 Pillars of Trust Grid */}
+      {/* Trust Pillars & 9-Point Security Architecture */}
       <TrustPillars />
 
       {/* Secured & Protected Escrow App Showcase Section */}

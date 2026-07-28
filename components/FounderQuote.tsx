@@ -78,16 +78,16 @@ export default function FounderQuote() {
               <div className="relative">
                 <Quote className="w-12 h-12 text-[#0A318B]/15 absolute -top-5 -left-4 rotate-180" />
                 <blockquote className="text-xl font-medium sm:text-2xl font-serif-heading italic text-[#0A318B] leading-relaxed relative z-10 pl-4 border-l-4 border-[#0A318B]">
-                  &ldquo;I lost money to fake visa agents twice in Nigeria. Instead of giving up, I built Visa Guard Africa Technologies LTD so no African family ever suffers that financial heartbreak again.&rdquo;
+                  &ldquo;Visa Guard was built by someone who personally lost money to visa fraud and decided to build a platform that protects others from the same experience.&rdquo;
                 </blockquote>
               </div>
 
               <div className="space-y-3 text-[#3B5284] text-xs sm:text-sm leading-relaxed">
                 <p>
-                  Visa agent scams in Nigeria and across Africa ruin lives. Unregulated agents demand 100% upfront payment, hand over forged appointment slips or fake visas, and block their victims on WhatsApp as soon as the money lands.
+                  Visa agent scams across Nigeria and Africa destroy dreams. Unregulated agents demand 100% upfront fees, hand over forged appointment slips or fake visas, and vanish as soon as the money lands.
                 </p>
                 <p>
-                  Born in Ebonyi State, founder Chukwudi Eze lived through this nightmare twice. He built Visa Guard with a 9-step agent audit and milestone escrow so traveler money stays locked until real, verified milestone proof is provided.
+                  Having suffered that devastating financial heartbreak twice, founder Chukwudi Eze engineered Visa Guard with strict 9-step agent auditing and milestone-based bank escrow—ensuring your money remains locked and safe until real, verified milestone proof is provided.
                 </p>
               </div>
 

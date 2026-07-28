@@ -93,12 +93,17 @@ export default function Navbar() {
 
           {/* Action CTA + Hamburger Icon on Right */}
           <div className="flex items-center gap-4">
-            <Link
-              href="/#waitlist"
-              className="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-sm font-bold text-white rounded-lg bg-[#0A318B] hover:bg-[#072366] shadow-sm cursor-pointer transition-all active:scale-95"
+            <a
+              href="https://play.google.com/store"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:inline-flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-bold text-white rounded-lg bg-[#0A318B] hover:bg-[#072366] shadow-sm cursor-pointer transition-all active:scale-95"
             >
-              Get Early Access
-            </Link>
+              <svg className="w-4 h-4 fill-current text-emerald-400" viewBox="0 0 24 24">
+                <path d="M3.609 1.814L13.792 12 3.61 22.186a2.372 2.372 0 0 1-.61-1.587V3.401c0-.604.22-1.16.609-1.587zM15.206 13.414l2.756-2.756-11.455-6.61 8.699 9.366zm0-2.828L6.507 1.22 17.962 7.83l-2.756 2.756zm1.414 1.414l3.87-2.235a1.8 1.8 0 0 0 0-3.13l-1.114-.643-2.756 2.756 2.756 2.756-.756.496z"/>
+              </svg>
+              <span>Download on Google Play</span>
+            </a>
 
             {/* Hamburger Button (Mobile Only) */}
             <button
@@ -187,15 +192,20 @@ export default function Navbar() {
               <div className="p-6 border-t border-blue-900/40 space-y-4 bg-[#072366]">
                 <div className="p-3 rounded-xl bg-white/10 border border-white/15 text-xs text-blue-100 flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-300 shrink-0" />
-                  <span>NDPR Compliant & Bank-Grade Escrow Vault</span>
+                  <span>Now Live on Google Play Store</span>
                 </div>
 
                 <a
-                  href="#waitlist"
+                  href="https://play.google.com/store"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={() => setSidebarOpen(false)}
                   className="w-full py-3.5 rounded-xl bg-white text-[#0A318B] hover:bg-blue-50 font-bold text-sm shadow-md flex items-center justify-center gap-2 transition-all cursor-pointer"
                 >
-                  <span>Join Early Access Waitlist</span>
+                  <svg className="w-4 h-4 fill-current text-[#0A318B]" viewBox="0 0 24 24">
+                    <path d="M3.609 1.814L13.792 12 3.61 22.186a2.372 2.372 0 0 1-.61-1.587V3.401c0-.604.22-1.16.609-1.587zM15.206 13.414l2.756-2.756-11.455-6.61 8.699 9.366zm0-2.828L6.507 1.22 17.962 7.83l-2.756 2.756zm1.414 1.414l3.87-2.235a1.8 1.8 0 0 0 0-3.13l-1.114-.643-2.756 2.756 2.756 2.756-.756.496z"/>
+                  </svg>
+                  <span>Download on Google Play</span>
                   <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
