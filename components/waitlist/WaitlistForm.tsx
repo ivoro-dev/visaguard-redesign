@@ -136,7 +136,7 @@ export default function WaitlistForm() {
                 type="tel"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
-                placeholder="09915663101"
+                placeholder="09015663101"
                 className="w-full px-4 py-3 rounded-xl bg-white border border-[#E2ECF9] text-sm text-[#072366] placeholder:text-slate-400 focus:outline-none focus:border-[#0A318B] focus:ring-1 focus:ring-[#0A318B] transition-all"
               />
             </div>

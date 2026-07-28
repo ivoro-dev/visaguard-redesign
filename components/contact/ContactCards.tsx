@@ -110,7 +110,7 @@ export default function ContactCards() {
 
           <div className="space-y-2.5 pt-1 text-xs sm:text-sm">
             <div className="p-3 rounded-2xl bg-[#F5F9FE] border border-[#E2ECF9] font-semibold text-[#0A318B]">
-              09915663101
+              09015663101
             </div>
 
             <div className="text-xs text-[#566C9A] flex items-center gap-1.5 pt-0.5 font-medium">
@@ -122,7 +122,7 @@ export default function ContactCards() {
 
         <div className="pt-6">
           <a
-            href="tel:09915663101"
+            href="tel:09015663101"
             className="w-full py-2.5 rounded-xl bg-[#F5F9FE] hover:bg-[#0A318B] text-[#0A318B] hover:text-white font-semibold text-xs border border-[#E2ECF9] hover:border-[#0A318B] transition-all text-center block cursor-pointer shadow-2xs"
           >
             Call Hotline Now →
